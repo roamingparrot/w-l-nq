@@ -1,5 +1,5 @@
 #Copy paste from crossterm
-name: termchat ci
+name: Wilinq ci
 
 on:
   # Build master branch only

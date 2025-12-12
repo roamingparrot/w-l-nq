@@ -131,17 +131,17 @@ jobs:
     - name: Build archive
       shell: bash
       run: |
-        staging="termchat-${{ env.RELEASE_VERSION }}-${{ matrix.target }}"
+        staging="Wilinq-${{ env.RELEASE_VERSION }}-${{ matrix.target }}"
         mkdir -p "$staging"
 
         cp {README.md,LICENSE} "$staging/"
 
         if [ "${{ matrix.os }}" = "windows-2019" ]; then
-          cp "target/release/termchat.exe" "$staging/"
+          cp "target/release/Wilinq.exe" "$staging/"
           7z a "$staging.zip" "$staging"
           echo "ASSET=$staging.zip" >> $GITHUB_ENV
         else
-          cp "target/release/termchat" "$staging/"
+          cp "target/release/Wilinq" "$staging/"
           tar czf "$staging.tar.gz" "$staging"
           echo "ASSET=$staging.tar.gz" >> $GITHUB_ENV
         fi

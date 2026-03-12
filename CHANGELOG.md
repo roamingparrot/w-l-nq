@@ -1,14 +1,14 @@
 # Changelog
 
 ## Release 1.3.0
-- Added configuration file and themes. (by `sigmaSd`)
+- Added configuration file and themes.
 - Added terminal bell when messages are received.
-- Added unix style paramters to commands. (by `zhongzc`)
+- Added unix style paramters to commands.
 - Minor internal improvements to reduce CPU.
 - Unknown error notified.
 
 ## Release 1.2.0
-- Added ascii video (by `sigmaSd`).
+- Added ascii video.
 
 ## Release 1.1.2
 - Fixed an issue that blocks the receiver of a file while the file was sending.
